@@ -62,8 +62,8 @@ body {
     Helvetica,
     Arial,
     sans-serif;
-  font-size: 16px;
-  line-height: 1.72;
+  font-size: 17px;
+  line-height: 1.76;
 }
 
 a {
@@ -128,7 +128,7 @@ a:hover {
 
 .main-nav a {
   color: var(--nav-muted);
-  font-size: 16px;
+  font-size: 16.5px;
   font-weight: 600;
 }
 
@@ -263,7 +263,7 @@ a:hover {
   margin: 0 0 18px;
   padding-left: 16px;
   color: var(--text);
-  font-size: 31px;
+  font-size: 33px;
   font-weight: 500;
   line-height: 1.25;
 }
@@ -282,7 +282,7 @@ a:hover {
 .section h3 {
   margin: 0 0 6px;
   color: var(--text);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   line-height: 1.38;
 }
@@ -293,6 +293,7 @@ a:hover {
 
 .helper-text {
   color: var(--muted);
+  font-size: 17px;
 }
 
 .bio-columns {
@@ -326,6 +327,7 @@ a:hover {
 
 .date {
   color: var(--accent-strong);
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -351,7 +353,7 @@ a:hover {
     linear-gradient(135deg, var(--accent-strong), var(--accent)),
     var(--accent);
   color: #ffffff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   box-shadow: 0 8px 18px rgba(26, 115, 232, 0.18);
 }
@@ -362,11 +364,13 @@ a:hover {
 
 .venue {
   color: var(--muted);
+  font-size: 16.5px;
   font-weight: 600;
 }
 
 .authors {
   color: var(--text);
+  font-size: 16.5px;
 }
 
 .pub-links {
@@ -387,6 +391,7 @@ a:hover {
 .entry-list p,
 .talk p {
   color: var(--muted);
+  font-size: 16.5px;
 }
 
 .contact-section {
@@ -405,7 +410,7 @@ a:hover {
   display: grid;
   gap: 6px;
   color: var(--text);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -447,6 +452,7 @@ a:hover {
 .address {
   margin-top: 58px;
   color: var(--muted);
+  font-size: 16.5px;
   font-style: normal;
 }
 
@@ -520,7 +526,7 @@ a:hover {
   }
 
   .section h2 {
-    font-size: 27px;
+    font-size: 29px;
   }
 
   .publication {
