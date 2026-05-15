@@ -16,6 +16,8 @@
   --nav-active: #ffeb3b;
   --input-bg: #ffffff;
   --shadow: 0 10px 28px rgba(26, 115, 232, 0.12);
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-reading: Georgia, "Times New Roman", Times, serif;
   color-scheme: light;
 }
 
@@ -54,16 +56,9 @@ body {
     linear-gradient(180deg, var(--accent-wash) 0, var(--bg) 220px),
     var(--bg);
   color: var(--text);
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 17px;
-  line-height: 1.76;
+  font-family: var(--font-ui);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 a {
@@ -213,7 +208,7 @@ a:hover {
 .sidebar h1 {
   margin: 0 0 8px;
   color: var(--text);
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -221,14 +216,14 @@ a:hover {
 .position {
   margin: 0;
   color: var(--text);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .institution {
   display: inline-block;
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .profile-links {
@@ -242,7 +237,7 @@ a:hover {
 .profile-links a {
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
   color: var(--accent);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .profile-links a:hover {
@@ -250,6 +245,9 @@ a:hover {
 }
 
 .content {
+  font-family: var(--font-reading);
+  font-size: 22px;
+  line-height: 1.58;
   min-width: 0;
 }
 
@@ -260,12 +258,13 @@ a:hover {
 
 .section h2 {
   position: relative;
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   padding-left: 16px;
   color: var(--text);
-  font-size: 33px;
-  font-weight: 500;
-  line-height: 1.25;
+  font-family: var(--font-ui);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.15;
 }
 
 .section h2::before {
@@ -280,20 +279,21 @@ a:hover {
 }
 
 .section h3 {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   color: var(--text);
-  font-size: 19px;
+  font-family: var(--font-ui);
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.38;
 }
 
 .section p {
-  margin: 0 0 14px;
+  margin: 0 0 22px;
 }
 
 .helper-text {
   color: var(--muted);
-  font-size: 17px;
+  font-size: 21px;
 }
 
 .bio-columns {
@@ -311,7 +311,7 @@ a:hover {
 
 .bio-columns li,
 .news-list li {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .year-heading {
@@ -327,7 +327,7 @@ a:hover {
 
 .date {
   color: var(--accent-strong);
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 700;
 }
 
@@ -364,13 +364,13 @@ a:hover {
 
 .venue {
   color: var(--muted);
-  font-size: 16.5px;
+  font-size: 19px;
   font-weight: 600;
 }
 
 .authors {
   color: var(--text);
-  font-size: 16.5px;
+  font-size: 19px;
 }
 
 .pub-links {
@@ -391,7 +391,7 @@ a:hover {
 .entry-list p,
 .talk p {
   color: var(--muted);
-  font-size: 16.5px;
+  font-size: 19px;
 }
 
 .contact-section {
@@ -410,7 +410,8 @@ a:hover {
   display: grid;
   gap: 6px;
   color: var(--text);
-  font-size: 15px;
+  font-family: var(--font-ui);
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -452,7 +453,7 @@ a:hover {
 .address {
   margin-top: 58px;
   color: var(--muted);
-  font-size: 16.5px;
+  font-size: 19px;
   font-style: normal;
 }
 
@@ -522,11 +523,11 @@ a:hover {
   }
 
   .sidebar h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .section h2 {
-    font-size: 29px;
+    font-size: 36px;
   }
 
   .publication {
