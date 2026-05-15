@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Academic profile portrait placeholder</title>
+  <desc id="desc">A simple abstract profile portrait for an academic website template.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="430" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dce8ed"/>
+      <stop offset="0.45" stop-color="#8fc5ca"/>
+      <stop offset="1" stop-color="#3d6772"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="140" y1="300" x2="380" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7fafc"/>
+      <stop offset="1" stop-color="#c9d6df"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="392" cy="102" r="74" fill="#ffffff" opacity="0.24"/>
+  <circle cx="252" cy="190" r="92" fill="#f2d5bf"/>
+  <path d="M157 452c12-98 62-150 100-150s89 52 101 150H157z" fill="url(#coat)"/>
+  <path d="M187 452c7-59 33-98 70-98s63 39 70 98H187z" fill="#1d3f4b"/>
+  <path d="M153 194c7-79 49-127 108-127 62 0 101 44 101 111 0 15-2 31-7 47-15-48-41-75-83-76-48-1-84 18-119 45z" fill="#26333c"/>
+  <path d="M203 217c17 23 37 35 60 35 24 0 44-12 60-35" fill="none" stroke="#7b4a3a" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="221" cy="185" r="8" fill="#26333c"/>
+  <circle cx="298" cy="185" r="8" fill="#26333c"/>
+</svg>
