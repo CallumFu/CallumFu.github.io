@@ -57,7 +57,7 @@ body {
     var(--bg);
   color: var(--text);
   font-family: var(--font-ui);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
@@ -208,7 +208,7 @@ a:hover {
 .sidebar h1 {
   margin: 0 0 8px;
   color: var(--text);
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -216,14 +216,14 @@ a:hover {
 .position {
   margin: 0;
   color: var(--text);
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
 }
 
 .institution {
   display: inline-block;
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .profile-links {
@@ -246,8 +246,8 @@ a:hover {
 
 .content {
   font-family: var(--font-reading);
-  font-size: 22px;
-  line-height: 1.58;
+  font-size: 20.5px;
+  line-height: 1.6;
   min-width: 0;
 }
 
@@ -262,7 +262,7 @@ a:hover {
   padding-left: 16px;
   color: var(--text);
   font-family: var(--font-ui);
-  font-size: 44px;
+  font-size: 42px;
   font-weight: 400;
   line-height: 1.15;
 }
@@ -282,7 +282,7 @@ a:hover {
   margin: 0 0 8px;
   color: var(--text);
   font-family: var(--font-ui);
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.38;
 }
@@ -293,7 +293,7 @@ a:hover {
 
 .helper-text {
   color: var(--muted);
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .bio-columns {
@@ -327,7 +327,7 @@ a:hover {
 
 .date {
   color: var(--accent-strong);
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -364,13 +364,13 @@ a:hover {
 
 .venue {
   color: var(--muted);
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .authors {
   color: var(--text);
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .pub-links {
@@ -391,7 +391,7 @@ a:hover {
 .entry-list p,
 .talk p {
   color: var(--muted);
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .contact-section {
@@ -453,7 +453,7 @@ a:hover {
 .address {
   margin-top: 58px;
   color: var(--muted);
-  font-size: 19px;
+  font-size: 18px;
   font-style: normal;
 }
 
