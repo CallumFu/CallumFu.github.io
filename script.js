@@ -2,10 +2,18 @@ const root = document.documentElement;
 const themeToggle = document.querySelector(".theme-toggle");
 const searchButton = document.querySelector(".search-button");
 const navLinks = [...document.querySelectorAll(".main-nav a")];
-const sections = navLinks
+const homeLinks = [...document.querySelectorAll('a[href="#home"]')];
+const sectionLinks = navLinks.filter((link) => link.getAttribute("href") !== "#home");
+const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+function setActiveNav(hash) {
+  navLinks.forEach((link) => {
+    link.classList.toggle("active", link.getAttribute("href") === hash);
+  });
+}
 
 function resolveTheme(choice) {
   if (choice === "auto") {
@@ -42,6 +50,25 @@ darkQuery.addEventListener("change", () => {
   }
 });
 
+homeLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    history.replaceState(null, "", window.location.pathname);
+    setActiveNav("#home");
+  });
+});
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (window.scrollY < 90) {
+      setActiveNav("#home");
+    }
+  },
+  { passive: true },
+);
+
 const observer = new IntersectionObserver(
   (entries) => {
     const visible = entries
@@ -50,9 +77,7 @@ const observer = new IntersectionObserver(
 
     if (!visible) return;
 
-    navLinks.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${visible.target.id}`);
-    });
+    setActiveNav(`#${visible.target.id}`);
   },
   {
     rootMargin: "-22% 0px -62% 0px",
@@ -61,3 +86,7 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+if (window.scrollY < 90) {
+  setActiveNav("#home");
+}
