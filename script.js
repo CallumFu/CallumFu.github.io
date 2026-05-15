@@ -1,5 +1,6 @@
 const root = document.documentElement;
-const themeButtons = [...document.querySelectorAll("[data-theme-choice]")];
+const themeToggle = document.querySelector(".theme-toggle");
+const searchButton = document.querySelector(".search-button");
 const navLinks = [...document.querySelectorAll(".main-nav a")];
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
@@ -16,20 +17,23 @@ function resolveTheme(choice) {
 function applyTheme(choice) {
   root.dataset.theme = choice;
   root.dataset.resolvedTheme = resolveTheme(choice);
-  themeButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.themeChoice === choice);
-  });
+  themeToggle?.classList.toggle("active", root.dataset.resolvedTheme === "dark");
 }
 
 const savedTheme = localStorage.getItem("academic-site-theme") || "auto";
 applyTheme(savedTheme);
 
-themeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const choice = button.dataset.themeChoice;
-    localStorage.setItem("academic-site-theme", choice);
-    applyTheme(choice);
-  });
+themeToggle?.addEventListener("click", () => {
+  const nextTheme = root.dataset.resolvedTheme === "dark" ? "light" : "dark";
+  localStorage.setItem("academic-site-theme", nextTheme);
+  applyTheme(nextTheme);
+});
+
+searchButton?.addEventListener("click", () => {
+  const query = window.prompt("Search this page");
+  if (query) {
+    window.find(query);
+  }
 });
 
 darkQuery.addEventListener("change", () => {
