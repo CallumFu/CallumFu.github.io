@@ -1,30 +1,34 @@
 :root {
   --bg: #ffffff;
-  --bg-soft: #f7f7f7;
+  --bg-soft: #f3f8ff;
   --text: #222222;
-  --muted: #5f6368;
-  --faint: #8a9099;
-  --line: #e5e7eb;
-  --accent: #1565c0;
-  --accent-strong: #0d47a1;
-  --topbar: rgba(255, 255, 255, 0.94);
+  --muted: #556372;
+  --faint: #7f8ea0;
+  --line: #dbe8f7;
+  --accent: #1a73e8;
+  --accent-strong: #1558b0;
+  --accent-soft: #e8f1ff;
+  --accent-wash: #f6faff;
+  --topbar: rgba(250, 253, 255, 0.96);
   --input-bg: #ffffff;
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow: 0 10px 28px rgba(26, 115, 232, 0.12);
   color-scheme: light;
 }
 
 :root[data-resolved-theme="dark"] {
-  --bg: #17191c;
-  --bg-soft: #202327;
+  --bg: #111827;
+  --bg-soft: #172236;
   --text: #f3f4f6;
-  --muted: #c5c9d0;
-  --faint: #9aa1ac;
-  --line: #363b43;
+  --muted: #c7d0dd;
+  --faint: #99a8bb;
+  --line: #26384f;
   --accent: #8ab4f8;
-  --accent-strong: #b7d1ff;
-  --topbar: rgba(23, 25, 28, 0.94);
-  --input-bg: #111318;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  --accent-strong: #c3dcff;
+  --accent-soft: #102d52;
+  --accent-wash: #132033;
+  --topbar: rgba(17, 24, 39, 0.96);
+  --input-bg: #0d1421;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
   color-scheme: dark;
 }
 
@@ -38,7 +42,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    linear-gradient(180deg, var(--accent-wash) 0, var(--bg) 220px),
+    var(--bg);
   color: var(--text);
   font-family:
     -apple-system,
@@ -66,9 +72,19 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
   background: var(--topbar);
   backdrop-filter: blur(16px);
+}
+
+.topbar::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+  content: "";
 }
 
 .topbar-inner {
@@ -82,9 +98,9 @@ a:hover {
 
 .site-name {
   flex: 0 0 auto;
-  color: var(--text);
+  color: var(--accent-strong);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .main-nav {
@@ -106,13 +122,18 @@ a:hover {
   text-decoration: none;
 }
 
+.main-nav a.active {
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
 .theme-switcher {
   display: flex;
   align-items: center;
   gap: 2px;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
   border-radius: 4px;
   padding: 2px;
+  background: color-mix(in srgb, var(--accent-soft) 42%, transparent);
 }
 
 .theme-switcher button {
@@ -128,9 +149,9 @@ a:hover {
 }
 
 .theme-switcher button.active {
-  background: var(--bg-soft);
-  color: var(--text);
-  box-shadow: inset 0 0 0 1px var(--line);
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .layout {
@@ -153,8 +174,10 @@ a:hover {
   width: 205px;
   height: 205px;
   margin: 0 auto 22px;
+  border: 4px solid #ffffff;
   border-radius: 50%;
   object-fit: cover;
+  outline: 3px solid color-mix(in srgb, var(--accent) 60%, var(--line));
   box-shadow: var(--shadow);
 }
 
@@ -188,7 +211,8 @@ a:hover {
 }
 
 .profile-links a {
-  color: var(--muted);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 42%, transparent);
+  color: var(--accent);
   font-size: 14px;
 }
 
@@ -206,11 +230,24 @@ a:hover {
 }
 
 .section h2 {
+  position: relative;
   margin: 0 0 18px;
+  padding-left: 16px;
   color: var(--text);
   font-size: 31px;
   font-weight: 500;
   line-height: 1.25;
+}
+
+.section h2::before {
+  position: absolute;
+  top: 0.2em;
+  bottom: 0.16em;
+  left: 0;
+  width: 5px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+  content: "";
 }
 
 .section h3 {
@@ -248,13 +285,19 @@ a:hover {
 }
 
 .year-heading {
+  display: inline-flex;
+  align-items: center;
   margin-top: 22px;
-  padding-top: 4px;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
 }
 
 .date {
-  color: var(--muted);
-  font-weight: 600;
+  color: var(--accent-strong);
+  font-weight: 700;
 }
 
 .publication {
@@ -262,11 +305,11 @@ a:hover {
   grid-template-columns: 118px minmax(0, 1fr);
   gap: 22px;
   padding: 18px 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
 }
 
 .publication:last-child {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
 }
 
 .pub-thumb {
@@ -274,13 +317,14 @@ a:hover {
   width: 118px;
   height: 86px;
   place-items: center;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line));
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), transparent 48%),
-    var(--bg-soft);
-  color: var(--accent-strong);
+    linear-gradient(135deg, var(--accent-strong), var(--accent)),
+    var(--accent);
+  color: #ffffff;
   font-size: 15px;
   font-weight: 700;
+  box-shadow: 0 8px 18px rgba(26, 115, 232, 0.18);
 }
 
 .pub-body h3 {
@@ -303,12 +347,12 @@ a:hover {
 .entry-list article,
 .talk {
   padding: 15px 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, var(--line));
 }
 
 .entry-list article:last-child,
 .talk:last-child {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 20%, var(--line));
 }
 
 .entry-list p,
@@ -358,12 +402,13 @@ a:hover {
   min-height: 38px;
   border: 0;
   border-radius: 4px;
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #ffffff;
   cursor: pointer;
   font: inherit;
   font-weight: 600;
   padding: 0 18px;
+  box-shadow: 0 8px 18px rgba(26, 115, 232, 0.2);
 }
 
 .contact-form button:hover {
@@ -379,7 +424,7 @@ a:hover {
 .footer {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto 36px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid color-mix(in srgb, var(--accent) 20%, var(--line));
   color: var(--faint);
   font-size: 13px;
   padding-top: 18px;

@@ -3,12 +3,13 @@
   <desc id="desc">A clean placeholder portrait for an academic homepage.</desc>
   <defs>
     <linearGradient id="background" x1="80" y1="40" x2="420" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#e9eef5"/>
-      <stop offset="1" stop-color="#b6c7d8"/>
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="0.55" stop-color="#b7d6ff"/>
+      <stop offset="1" stop-color="#6ea8f7"/>
     </linearGradient>
     <linearGradient id="jacket" x1="144" y1="320" x2="368" y2="500" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2f4d63"/>
-      <stop offset="1" stop-color="#1c2e3d"/>
+      <stop offset="0" stop-color="#174ea6"/>
+      <stop offset="1" stop-color="#0d2f63"/>
     </linearGradient>
   </defs>
   <rect width="512" height="512" fill="url(#background)"/>
