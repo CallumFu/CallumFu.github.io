@@ -6,7 +6,7 @@
     <title>Le Fu</title>
     <meta
       name="description"
-      content="Academic homepage for Le Fu, including biography, news, publications, awards, talks, and contact information."
+      content="Academic homepage for Le Fu, focused on power-system optimization, network control, power-system dynamics, uncertainty, and distributionally robust optimization."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -18,8 +18,10 @@
           <a href="#home">Home</a>
           <a href="#publications">Publications</a>
           <a href="#news">News</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#awards">Awards</a>
-          <a href="#talks">Talks</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="top-actions">
@@ -42,14 +44,13 @@
       <aside class="sidebar" aria-label="Profile">
         <img class="avatar" src="assets/profile-placeholder.svg" alt="Le Fu portrait placeholder" />
         <h1>Le Fu</h1>
-        <p class="position">PhD Student / Researcher</p>
-        <a class="institution" href="#">Your University</a>
+        <p class="position">Master's Student</p>
+        <a class="institution" href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>
+        <p class="sidebar-note">Power-system optimization, network control, dynamics, and uncertainty</p>
 
         <div class="profile-links" aria-label="Academic profiles">
-          <a href="mailto:your.name@example.edu" aria-label="Email">Email</a>
-          <a href="#" aria-label="Google Scholar">Scholar</a>
-          <a href="#" aria-label="GitHub">GitHub</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:ff23@mails.tsinghua.edu.cn" aria-label="Email">Email</a>
+          <span class="cv-placeholder" aria-label="Curriculum vitae">CV</span>
         </div>
       </aside>
 
@@ -57,79 +58,231 @@
         <section class="section" aria-labelledby="bio-title">
           <h2 id="bio-title">Biography</h2>
           <p>
-            I am a researcher working at the intersection of energy systems, optimization, and climate
-            resilience. My work develops data-driven models and decision-support tools for reliable and
-            sustainable infrastructure under uncertainty.
+            I am a master's student at Tsinghua University and a prospective Ph.D. applicant in power
+            systems and optimization. My work focuses on power-system optimization, network control,
+            power-system dynamics, and uncertainty-aware decision-making for modern energy systems.
           </p>
           <p>
-            My research aims to bridge engineering systems and real-world decision making, with a focus
-            on resilience analysis, risk-aware planning, and scalable optimization for complex networks.
+            My current research develops optimization models and computational methods for nonlinear
+            and uncertainty-aware power-system operation. I am especially interested in robust and
+            distributionally robust optimization, convex relaxation and bound tightening, networked
+            dynamic systems, and scalable algorithms for coordinated transmission, distribution, and
+            microgrid operation.
           </p>
           <p>
-            I collaborate with academic and industry partners on methods that connect theory, computation,
-            and practice. This site collects selected publications, talks, awards, and recent updates.
+            I received dual bachelor's degrees in Engineering and Management from Qilu University of
+            Technology, graduating first among 206 students. I am also interested in graph-theoretic
+            analysis of power-system resilience, robust and distributionally robust optimization, and
+            vehicle-to-grid integration.
           </p>
+
+          <div class="highlight-grid" aria-label="Academic highlights">
+            <article>
+              <span>1/206</span>
+              Ranked first among 206 undergraduates
+            </article>
+            <article>
+              <span>IEEE TSG</span>
+              Accepted work on high-order motifs and grid resilience
+            </article>
+            <article>
+              <span>PESGM 2025</span>
+              Published work on online power-flow NLP acceleration
+            </article>
+            <article>
+              <span>Top 0.01%</span>
+              President Scholarship recipient
+            </article>
+          </div>
 
           <div class="bio-columns" aria-label="Research overview">
             <div>
               <h3>Research Interests</h3>
               <ul>
-                <li>Energy system resilience</li>
-                <li>Optimization under uncertainty</li>
-                <li>Climate risk analysis</li>
-                <li>Data-driven infrastructure planning</li>
+                <li>Power-system optimization</li>
+                <li>Power-system dynamics</li>
+                <li>Network control</li>
+                <li>Uncertainty-aware optimization</li>
+                <li>Distributionally robust optimization</li>
               </ul>
             </div>
             <div>
               <h3>Education</h3>
               <ul>
-                <li>PhD, Your University, 2026</li>
-                <li>MS, Previous Institution, 2022</li>
-                <li>BS, Previous Institution, 2020</li>
+                <li>M.S., Tsinghua University, Sep 2023 - Jun 2026</li>
+                <li>Dual bachelor's degrees, Qilu University of Technology, Sep 2019 - Jun 2023</li>
+                <li>GPA: 4.43/5.0; ranked <strong class="rank-emphasis">1st</strong> out of 206 students</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section class="section" id="publications" aria-labelledby="publications-title">
-          <h2 id="publications-title">Selected Publications</h2>
-          <p class="helper-text">More publications are available via Google Scholar.</p>
+          <h2 id="publications-title">Publications</h2>
+          <p class="helper-text">
+            Work spanning power-system optimization, nonlinear programming, network dynamics,
+            uncertainty modeling, graph-theoretic resilience, and related energy-system problems.
+          </p>
 
           <article class="publication">
-            <div class="pub-thumb" aria-hidden="true">
-              <span>2026</span>
-            </div>
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/motif-resilience.jpg" alt="" />
+            </figure>
             <div class="pub-body">
-              <h3><a href="#">Risk-aware electricity dispatch under climate extremes</a></h3>
-              <p class="venue">Journal of Energy Systems, 2026</p>
-              <p class="authors">Le Fu, Collaborator A, Collaborator B</p>
-              <p class="pub-links"><a href="#">PDF</a> <a href="#">Cite</a> <a href="#">Code</a></p>
+              <h3>Deepening the Understanding of Interdependence Between Higher-Order Motifs and Resilience in Power Grid Through Line Graph</h3>
+              <p class="venue">IEEE Transactions on Smart Grid, published, 2026</p>
+              <p class="authors"><span class="author-me">L. Fu</span>, Z. Ruan, J. Guo, X. Meng, and X. Wang</p>
+              <p class="topic-tags"><span>Graph-theoretic resilience</span><span>Line graph</span><span>Network motifs</span></p>
             </div>
           </article>
 
           <article class="publication">
-            <div class="pub-thumb" aria-hidden="true">
-              <span>2025</span>
-            </div>
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/conic-relaxation.jpg" alt="" />
+            </figure>
             <div class="pub-body">
-              <h3><a href="#">Cross-sector infrastructure resilience in a changing climate</a></h3>
-              <p class="venue">Nature Energy, 2025</p>
-              <p class="authors">Le Fu, Collaborator C, Collaborator D</p>
-              <p class="pub-links"><a href="#">PDF</a> <a href="#">Cite</a></p>
+              <h3>Strengthening Conic Relaxation of Power Flow in Radial Distribution Network via Convex Envelope and Bound Tightening</h3>
+              <p class="venue">CSEE Journal of Power and Energy Systems, accepted, 2025</p>
+              <p class="authors">Y. Yang, <span class="author-me">L. Fu*</span>, X. Yang, C. Lin, and W. Wu</p>
+              <p class="topic-tags"><span>Convex relaxation</span><span>Bound tightening</span><span>Distribution networks</span></p>
             </div>
           </article>
 
           <article class="publication">
-            <div class="pub-thumb" aria-hidden="true">
-              <span>2024</span>
-            </div>
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/tail-clustered-wdrjcc.jpg" alt="" />
+            </figure>
             <div class="pub-body">
-              <h3><a href="#">Learning-augmented optimization for reliable power grids</a></h3>
-              <p class="venue">IEEE Transactions on Power Systems, 2024</p>
-              <p class="authors">Le Fu, Collaborator E</p>
-              <p class="pub-links"><a href="#">PDF</a> <a href="#">Cite</a></p>
+              <h3>A Tail-Clustered Strengthened Linear Approximation for Wasserstein Distributionally Robust Joint Chance-Constrained Unit Commitment</h3>
+              <p class="venue">IEEE Transactions on Power Systems, under review, 2026</p>
+              <p class="authors"><span class="author-me">L. Fu</span>, Y. Yang*, C. Lin, Q. Wang, Z. Ruan, X. Yang, and W. Wu</p>
+              <p class="topic-tags"><span>Distributionally robust optimization</span><span>Unit commitment</span><span>Chance constraints</span></p>
             </div>
           </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/gas-reduced-order.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>A Reduced-Order Dynamic Gas Network Model for Multi-Period Coordinated Operation of Integrated Power-Gas Systems</h3>
+              <p class="venue">IEEE Transactions on Smart Grid, under review, 2026</p>
+              <p class="authors"><span class="author-me">L. Fu</span>, Y. Yang*, X. Yang, C. Lin, L. Xu, and W. Wu</p>
+              <p class="topic-tags"><span>Network dynamics</span><span>Power-gas systems</span><span>Reduced-order modeling</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/gas-high-fidelity.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>A High-Fidelity Time Domain Model for Gas Network Transients via Network-Level Rational Approximation</h3>
+              <p class="venue">IEEE Power Engineering Letters, under review, 2026</p>
+              <p class="authors"><span class="author-me">L. Fu</span>, Y. Yang*, X. Yang, C. Lin, L. Xu, S. Ni, and W. Wu</p>
+              <p class="topic-tags"><span>Network control</span><span>Gas transients</span><span>Rational approximation</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/pv-pq-switching.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>Online Power Flow Nonlinear Programming Modeling and Solution Acceleration Method Considering PV-PQ Switching</h3>
+              <p class="venue">2025 IEEE Power &amp; Energy Society General Meeting (PESGM), Texas, USA, published, 2025</p>
+              <p class="authors"><span class="author-me">L. Fu*</span> and Y. Ju</p>
+              <p class="topic-tags"><span>SQP trust region</span><span>Power-flow acceleration</span><span>PV/PQ switching</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/lme-adjoint-acopf.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>An Efficient Algorithm to Calculate Locational Marginal Emissions in ACOPF via Adjoint Optimization Reformulation</h3>
+              <p class="venue">Under review, 2026</p>
+              <p class="authors">Y. Yang, <span class="author-me">L. Fu*</span>, L. Sang, L. Xu, X. Yang, C. Lin, and W. Wu</p>
+              <p class="topic-tags"><span>ACOPF</span><span>Adjoint optimization</span><span>Marginal emissions</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/contextual-uncertainty.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>Contextual-Aware Uncertainty Set in Power System Uncertainty Dispatch</h3>
+              <p class="venue">IEEE Transactions on Power Systems, under review, 2026</p>
+              <p class="authors">Z. Ruan, Y. Liu, <span class="author-me">L. Fu</span>, and L. Shi</p>
+              <p class="topic-tags"><span>Uncertainty dispatch</span><span>Robust optimization</span><span>Contextual modeling</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/compressed-dro-resilience.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>Compressed Distributionally Robust Optimization for Resilience Enhancement of Distribution Networks Under Uncertainty</h3>
+              <p class="venue">2026 11th Asia Conference on Power and Electrical Engineering (ACPEE), Macau, China, published, 2026</p>
+              <p class="authors"><span class="author-me">L. Fu</span>, Y. Yang*, and S. Ni</p>
+              <p class="topic-tags"><span>Distribution resilience</span><span>Wasserstein DRO</span><span>Online clustering</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/frequency-secure-uc.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>Adaptive Frequency-Secure Unit Commitment With Wind-Based Virtual Inertia Support</h3>
+              <p class="venue">2026 11th Asia Conference on Power and Electrical Engineering (ACPEE), Macau, China, published, 2026</p>
+              <p class="authors">S. Yang, <span class="author-me">L. Fu*</span>, Y. Wang, G. Zhuang, C. Chen, and Y. Yang</p>
+              <p class="topic-tags"><span>Frequency security</span><span>Virtual inertia</span><span>Unit commitment</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/thermal-response.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>Data-Driven Temporal Recursive Thermal Response Model for Borehole Heat Exchangers Based on Sum of Exponential Approximation</h3>
+              <p class="venue">Renewable Energy, under review, 2026</p>
+              <p class="authors">Y. Yang, P. Wu, X. Yang, C. Lin, L. Xu, <span class="author-me">L. Fu</span>, Q. Wang, and W. Wu</p>
+              <p class="topic-tags"><span>Energy systems</span><span>Thermal response</span><span>Reduced-order modeling</span></p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <figure class="pub-thumb" aria-hidden="true">
+              <img src="assets/publication-thumbs/final/hubble-tension.jpg" alt="" />
+            </figure>
+            <div class="pub-body">
+              <h3>A Better Reconciliation of Hubble Tension in the Dark Energy Scalar Field</h3>
+              <p class="venue">Research in Astronomy and Astrophysics, published, 2023</p>
+              <p class="authors"><span class="author-me">L. Fu</span>, L. Yang, and M. Zhang*</p>
+              <p class="topic-tags"><span>Scalar-field cosmology</span><span>Hubble tension</span><span>Bayesian evidence</span></p>
+            </div>
+          </article>
+
+          <h3 class="pub-group-heading">Patents</h3>
+          <div class="entry-list compact-list">
+            <article>
+              <h3>A Trust Region Power Flow Method Considering Inequality Constraints for Line-Loss Analysis</h3>
+              <p>Chinese patent, under substantive examination, 2024</p>
+            </article>
+            <article>
+              <h3>State Estimation Method for Distribution Networks Based on Trust Region</h3>
+              <p>Chinese patent, under substantive examination, 2024</p>
+            </article>
+            <article>
+              <h3>An Efficient Solution Method for Nonlinear Optimization of Power-System Power Flow</h3>
+              <p>Chinese patent, submitted, 2025</p>
+            </article>
+          </div>
         </section>
 
         <section class="section" id="news" aria-labelledby="news-title">
@@ -137,83 +290,237 @@
           <h3 class="year-heading">2026</h3>
           <ul class="news-list">
             <li>
-              <span class="date">May 15, 2026</span>
-              Our new paper on resilient energy system planning was accepted for publication.
-            </li>
-            <li>
-              <span class="date">Mar 02, 2026</span>
-              I gave an invited talk on data-driven risk analysis for critical infrastructure.
+              <span class="date">Jun 2026</span>
+              I expect to complete my master's degree at Tsinghua University.
             </li>
           </ul>
           <h3 class="year-heading">2025</h3>
           <ul class="news-list">
             <li>
-              <span class="date">Nov 18, 2025</span>
-              New project page added for climate-aware optimization under extreme events.
+              <span class="date">2025</span>
+              Our paper on high-order motifs and power-grid resilience was accepted by IEEE Transactions
+              on Smart Grid.
             </li>
             <li>
-              <span class="date">Sep 10, 2025</span>
-              I joined a collaborative research project on robust planning for low-carbon power systems.
+              <span class="date">2025</span>
+              Our work on PV/PQ switching and online power-flow NLP acceleration was published at IEEE
+              PES General Meeting.
+            </li>
+            <li>
+              <span class="date">Jun 2025</span>
+              I joined a National Key Research and Development Program project on coordinated
+              transmission, distribution, and microgrid regulation under high DER access.
+            </li>
+          </ul>
+          <h3 class="year-heading">2024</h3>
+          <ul class="news-list">
+            <li>
+              <span class="date">2024</span>
+              I received the Outstanding Graduation Thesis award from Qilu University of Technology and
+              the Outstanding Graduate of Shandong Province honor.
+            </li>
+            <li>
+              <span class="date">2024</span>
+              I led a Tsinghua University rural revitalization team and coordinated education programs
+              across five villages.
             </li>
           </ul>
         </section>
 
+        <section class="section" id="experience" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience</h2>
+
+          <article class="timeline-item">
+            <div class="meta-line">
+              <span>Tsinghua Sichuan Energy Internet Research Institute</span>
+              <time>Sep 2023 - Jun 2026</time>
+            </div>
+            <h3>Energy Planning Trainee</h3>
+            <p>
+              Researched acceleration methods for nonlinear programming in power systems, contributed to
+              technology projects on power-flow optimization theory and line-loss calculation, and
+              supported literature synthesis, data collection, and technical documentation.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="meta-line">
+              <span>Research Breakthrough Direction</span>
+              <time>Sep 2023 - Jun 2026</time>
+            </div>
+            <h3>Development of a Chinese Nonlinear Programming Solver</h3>
+            <p>
+              Rewrote interior-point filter line-search and trust-region SQP algorithms in C++ with
+              Eigen, connected Python-based structure-aware automatic differentiation with C++ dynamic
+              libraries, and proposed acceleration strategies for nonlinear optimization in power-system
+              applications.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="meta-line">
+              <span>National Science Fund for Young Scholars</span>
+              <time>Sep 2020 - Jul 2022</time>
+            </div>
+            <h3>Controllability of Dynamic Systems with Time-Sequential Network Edges</h3>
+            <p>
+              Studied edge controllability in complex networks, identified uniqueness properties of
+              driver-node sets from local node information, and developed a binary-network model for
+              stock trend prediction in a second bachelor's thesis.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="meta-line">
+              <span>Natural Science Foundation of Shandong Province</span>
+              <time>Sep 2021 - Aug 2022</time>
+            </div>
+            <h3>Dark-Energy Scalar Fields and the Hubble Constant</h3>
+            <p>
+              Explored quintessence, phantom, and quintom scalar-field models for Hubble tension,
+              evaluated Bayesian evidence with MCEvidence, and analyzed possible kinematic explanations.
+            </p>
+          </article>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title">Projects</h2>
+
+          <article class="project">
+            <div class="meta-line">
+              <span>National Key Research and Development Program</span>
+              <time>Jun 2025 - present</time>
+            </div>
+            <h3>Coordinated Regulation of Transmission, Distribution, and Microgrid Systems</h3>
+            <p>
+              Established a multi-time-scale power-flow optimization model with embedded active/reactive
+              power coordination, studied equivalent modeling of nonsmooth flow constraints, and proposed
+              a large-scale parallel solution strategy based on adaptive automatic segmentation.
+            </p>
+          </article>
+
+          <article class="project">
+            <div class="meta-line">
+              <span>China Southern Power Grid Technology Project</span>
+              <time>Jul 2024 - Jun 2025</time>
+            </div>
+            <h3>Line-Loss Analysis for Distribution Networks with Integrated DERs</h3>
+            <p>
+              Developed theoretical models for line-loss calculation under high DER penetration, prepared
+              technical reports and white papers, and documented data collection and model validation
+              workflows for reproducible analysis.
+            </p>
+          </article>
+
+          <article class="project">
+            <div class="meta-line">
+              <span>State Grid Corporation of China Headquarters Technology Project</span>
+              <time>Sep 2023 - Dec 2023</time>
+            </div>
+            <h3>Autonomous-Collaborative Planning and Operation of Distribution Network-Microgrids</h3>
+            <p>
+              Drafted proposal and feasibility materials, prepared bid documents and progress reports,
+              and helped implement and validate optimization algorithms for distributed source-load
+              interaction using historical and real-time microgrid data.
+            </p>
+          </article>
+        </section>
+
         <section class="section" id="awards" aria-labelledby="awards-title">
-          <h2 id="awards-title">Awards</h2>
-          <div class="entry-list">
+          <h2 id="awards-title">Selected Awards</h2>
+          <div class="entry-list award-list">
             <article>
-              <h3><a href="#">Best Dissertation Award</a></h3>
-              <p>Professional Society, Apr 2026</p>
+              <h3>President Scholarship</h3>
+              <p>Top 0.01%, 2021-2022</p>
             </article>
             <article>
-              <h3>Graduate Research Fellowship</h3>
-              <p>Your University, Nov 2025</p>
+              <h3>National Scholarship</h3>
+              <p>Top 0.2%, 2019-2020</p>
             </article>
             <article>
-              <h3>Outstanding Reviewer</h3>
-              <p>Academic Journal, Oct 2024</p>
+              <h3>Outstanding Graduate of Shandong Province</h3>
+              <p>Top 1%, 2023-2024</p>
+            </article>
+            <article>
+              <h3>Outstanding Graduation Thesis, Qilu University of Technology</h3>
+              <p>Top 2%, 2023-2024</p>
+            </article>
+            <article>
+              <h3>First Prize Scholarship, Qilu University of Technology</h3>
+              <p>Top 5%, received three times, 2019-2023</p>
+            </article>
+            <article>
+              <h3>Annual Academic Achievement Role Model</h3>
+              <p>2023-2024</p>
+            </article>
+            <article>
+              <h3>First Prize, Physics Competition of Shandong Province</h3>
+              <p>Top 0.1%, 2020-2021</p>
+            </article>
+            <article>
+              <h3>Bronze Award, Tsinghua University Rural Revitalization</h3>
+              <p>2024-2025</p>
             </article>
           </div>
         </section>
 
-        <section class="section" id="talks" aria-labelledby="talks-title">
-          <h2 id="talks-title">Recent & Upcoming Talks</h2>
-          <article class="talk">
-            <h3><a href="#">Towards climate-resilient energy systems</a></h3>
-            <p>International Conference on Energy Systems</p>
-            <p>Jul 22, 2026, Berlin, Germany</p>
+        <section class="section" id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills and Service</h2>
+          <div class="skill-grid">
+            <article>
+              <h3>Programming</h3>
+              <p>Python, C++, MATLAB, Fortran</p>
+            </article>
+            <article>
+              <h3>Tools</h3>
+              <p>Eigen, GAMS, LaTeX, Microsoft Office, Adobe Illustrator, Photoshop</p>
+            </article>
+            <article>
+              <h3>Languages</h3>
+              <p>Chinese, English</p>
+            </article>
+            <article>
+              <h3>Research Methods</h3>
+              <p>Nonlinear programming, automatic differentiation, convex relaxation, robust optimization</p>
+            </article>
+          </div>
+
+          <article class="timeline-item service-item">
+            <div class="meta-line">
+              <span>Tsinghua University Rural Revitalization Team</span>
+              <time>Dec 2024 - Jan 2025</time>
+            </div>
+            <h3>Project Lead</h3>
+            <p>Coordinated more than 20 volunteers and implemented education programs in five villages.</p>
           </article>
-          <article class="talk">
-            <h3><a href="#">Data-driven risk analysis for critical infrastructure</a></h3>
-            <p>Research Seminar</p>
-            <p>Mar 02, 2026, Online</p>
+
+          <article class="timeline-item service-item">
+            <div class="meta-line">
+              <span>Student Union, School of Electrical Engineering, Qilu University of Technology</span>
+              <time>Mar 2020 - Dec 2021</time>
+            </div>
+            <h3>Head of the Rights and Interests Department</h3>
+            <p>Assisted with enrollment procedures for new students and scholarship and grant evaluation.</p>
           </article>
         </section>
 
         <section class="section contact-section" id="contact" aria-labelledby="contact-title">
           <div>
             <h2 id="contact-title">Contact</h2>
-            <form class="contact-form" action="mailto:your.name@example.edu" method="post" enctype="text/plain">
-              <label>
-                Name
-                <input name="name" autocomplete="name" />
-              </label>
-              <label>
-                Email
-                <input name="email" type="email" autocomplete="email" />
-              </label>
-              <label>
-                Message
-                <textarea name="message" rows="5"></textarea>
-              </label>
-              <button type="submit">Send</button>
-            </form>
+            <p>
+              I am always glad to hear from researchers and students interested in power-system
+              optimization, network control, dynamics, uncertainty, and distributionally robust
+              optimization.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:ff23@mails.tsinghua.edu.cn">ff23@mails.tsinghua.edu.cn</a>
+              <span class="cv-placeholder">Download CV</span>
+            </div>
           </div>
           <address class="address">
-            <a href="mailto:your.name@example.edu">your.name@example.edu</a><br />
-            Your Department, Your University<br />
-            City, Country<br />
-            Office: Building, Room 000
+            Tsinghua University<br />
+            Beijing, China<br />
+            Master's Student
           </address>
         </section>
       </div>
