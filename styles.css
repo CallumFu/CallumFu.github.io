@@ -9,6 +9,7 @@
   --accent-strong: #26368f;
   --accent-soft: #eef1ff;
   --accent-wash: #f8f9ff;
+  --achievement: #b45309;
   --topbar: #3f51b5;
   --topbar-strong: #3344a1;
   --nav-text: #ffffff;
@@ -32,6 +33,7 @@
   --accent-strong: #eef1ff;
   --accent-soft: #232d63;
   --accent-wash: #11162b;
+  --achievement: #fbbf24;
   --topbar: #26327d;
   --topbar-strong: #1b255f;
   --nav-text: #ffffff;
@@ -316,36 +318,6 @@ a:hover {
   margin-top: 26px;
 }
 
-.highlight-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin: 30px 0 28px;
-}
-
-.highlight-grid article {
-  min-height: 128px;
-  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
-  border-top: 3px solid var(--accent);
-  border-radius: 6px;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--accent-soft) 46%, var(--bg)) 0%, var(--bg) 100%);
-  color: var(--muted);
-  font-family: var(--font-ui);
-  font-size: 14px;
-  line-height: 1.45;
-  padding: 14px;
-}
-
-.highlight-grid span {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--accent-strong);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.15;
-}
-
 .bio-columns ul,
 .news-list {
   margin: 0;
@@ -363,6 +335,45 @@ a:hover {
   font-size: 1.24em;
   font-weight: 500;
   line-height: 1;
+}
+
+.achievement-emphasis {
+  color: var(--achievement);
+}
+
+.solver-lead {
+  max-width: 980px;
+}
+
+.solver-highlights {
+  margin: 0 0 30px;
+  padding-left: 28px;
+}
+
+.solver-highlights li {
+  margin-bottom: 10px;
+}
+
+.solver-figure {
+  margin: 28px 0 0;
+}
+
+.solver-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.solver-figure figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .year-heading {
@@ -725,10 +736,6 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .highlight-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .award-list {
     grid-template-columns: 1fr;
   }
@@ -766,10 +773,6 @@ a:hover {
   .pub-thumb {
     width: 100%;
     height: 138px;
-  }
-
-  .highlight-grid {
-    grid-template-columns: 1fr;
   }
 
   .meta-line {

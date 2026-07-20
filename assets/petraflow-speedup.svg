@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img" aria-labelledby="title desc">
+  <title id="title">PetraFlow ACOPF Speedup over IPOPT</title>
+  <desc id="desc">Speedup equals IPOPT solve time divided by PetraFlow solve time. Twenty PGLib ACOPF cases show speedups from 3.51 to 15.02 times.</desc>
+  <defs>
+    <linearGradient id="titleGradient" x1="0" x2="1">
+      <stop offset="0" stop-color="#078b69"/>
+      <stop offset="0.46" stop-color="#087861"/>
+      <stop offset="0.47" stop-color="#102a63"/>
+      <stop offset="1" stop-color="#111f52"/>
+    </linearGradient>
+    <linearGradient id="greenBar" x1="0" x2="1">
+      <stop offset="0" stop-color="#078f70"/>
+      <stop offset="1" stop-color="#00a07e"/>
+    </linearGradient>
+    <linearGradient id="blueBar" x1="0" x2="1">
+      <stop offset="0" stop-color="#0d47d9"/>
+      <stop offset="1" stop-color="#1769ff"/>
+    </linearGradient>
+    <style>
+      .label { font: 600 17px Arial, Helvetica, sans-serif; fill: #111827; }
+      .value { font: 700 20px Arial, Helvetica, sans-serif; fill: #111827; }
+      .time { font: 17px Arial, Helvetica, sans-serif; fill: #111827; }
+      .tick { font: 17px Arial, Helvetica, sans-serif; fill: #111827; }
+      .grid { stroke: #d6dbe5; stroke-width: 1; stroke-dasharray: 4 5; }
+    </style>
+  </defs>
+  <rect width="1400" height="920" fill="#ffffff"/>
+  <text x="50" y="58" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="800" fill="url(#titleGradient)">PetraFlow ACOPF Speedup over IPOPT</text>
+  <text x="52" y="101" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#111827">Speedup = IPOPT solve time / PetraFlow solve time</text>
+  <text x="1380" y="105" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#111827">PetraFlow / IPOPT</text>
+
+  <g aria-hidden="true">
+    <line class="grid" x1="410" y1="118" x2="410" y2="830"/>
+    <line class="grid" x1="498" y1="118" x2="498" y2="830"/>
+    <line class="grid" x1="586" y1="118" x2="586" y2="830"/>
+    <line class="grid" x1="674" y1="118" x2="674" y2="830"/>
+    <line class="grid" x1="762" y1="118" x2="762" y2="830"/>
+    <line class="grid" x1="850" y1="118" x2="850" y2="830"/>
+    <line class="grid" x1="938" y1="118" x2="938" y2="830"/>
+    <line class="grid" x1="1026" y1="118" x2="1026" y2="830"/>
+    <line class="grid" x1="1114" y1="118" x2="1114" y2="830"/>
+  </g>
+
+  <g>
+    <text class="label" x="397" y="145" text-anchor="end">pg11b_opf_case240_power_1svp/pf_ap</text><rect x="410" y="126" width="661" height="25" rx="3" fill="url(#greenBar)"/><text class="value" x="1081" y="146">15.02x</text><text class="time" x="1380" y="146" text-anchor="end">0.10s / 1.46s</text>
+    <text class="label" x="397" y="179" text-anchor="end">pg11b_opf_case240_power_sad</text><rect x="410" y="160" width="562" height="25" rx="3" fill="url(#greenBar)"/><text class="value" x="982" y="180">12.78x</text><text class="time" x="1380" y="180" text-anchor="end">0.12s / 1.59s</text>
+    <text class="label" x="397" y="213" text-anchor="end">pg11b_opf_case240_power_api</text><rect x="410" y="194" width="526" height="25" rx="3" fill="url(#greenBar)"/><text class="value" x="946" y="214">11.95x</text><text class="time" x="1380" y="214" text-anchor="end">0.11s / 1.34s</text>
+    <text class="label" x="397" y="247" text-anchor="end">pg11b_opf_case5_pjm___sad</text><rect x="410" y="228" width="470" height="25" rx="3" fill="url(#greenBar)"/><text class="value" x="890" y="248">10.68x</text><text class="time" x="1380" y="248" text-anchor="end">0.00s / 0.02s</text>
+    <text class="label" x="397" y="281" text-anchor="end">pg11b_opf_case14_ieee___sad</text><rect x="410" y="262" width="269" height="25" rx="3" fill="url(#greenBar)"/><text class="value" x="689" y="282">6.12x</text><text class="time" x="1380" y="282" text-anchor="end">0.00s / 0.01s</text>
+
+    <text class="label" x="397" y="315" text-anchor="end">pg11b_opf_case6468_rte___api</text><rect x="410" y="296" width="202" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="622" y="316">4.60x</text><text class="time" x="1380" y="316" text-anchor="end">8.45s / 38.86s</text>
+    <text class="label" x="397" y="349" text-anchor="end">pg11b_opf_case1979_goc___api</text><rect x="410" y="330" width="191" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="611" y="350">4.33x</text><text class="time" x="1380" y="350" text-anchor="end">3.83s / 16.58s</text>
+    <text class="label" x="397" y="383" text-anchor="end">pg11b_opf_case793_goc___api</text><rect x="410" y="364" width="190" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="610" y="384">4.31x</text><text class="time" x="1380" y="384" text-anchor="end">0.17s / 0.73s</text>
+    <text class="label" x="397" y="417" text-anchor="end">pg11b_opf_case2383_cmen___sad</text><rect x="410" y="398" width="176" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="596" y="418">4.01x</text><text class="time" x="1380" y="418" text-anchor="end">0.78s / 3.15s</text>
+    <text class="label" x="397" y="451" text-anchor="end">pg11b_opf_case793_goc_1svp/pf_ap</text><rect x="410" y="432" width="176" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="596" y="452">3.99x</text><text class="time" x="1380" y="452" text-anchor="end">0.18s / 0.70s</text>
+    <text class="label" x="397" y="485" text-anchor="end">pg11b_opf_case3128ep_k___api</text><rect x="410" y="466" width="175" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="595" y="486">3.97x</text><text class="time" x="1380" y="486" text-anchor="end">1.37s / 5.44s</text>
+    <text class="label" x="397" y="519" text-anchor="end">pg11b_opf_case179_goc___api</text><rect x="410" y="500" width="172" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="592" y="520">3.91x</text><text class="time" x="1380" y="520" text-anchor="end">0.08s / 0.31s</text>
+    <text class="label" x="397" y="553" text-anchor="end">pg11b_opf_case4837_goc___api</text><rect x="410" y="534" width="164" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="584" y="554">3.73x</text><text class="time" x="1380" y="554" text-anchor="end">3.80s / 14.18s</text>
+    <text class="label" x="397" y="587" text-anchor="end">pg11b_opf_case5931_goc___api</text><rect x="410" y="568" width="159" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="579" y="588">3.62x</text><text class="time" x="1380" y="588" text-anchor="end">13.42s / 48.56s</text>
+    <text class="label" x="397" y="621" text-anchor="end">pg11b_opf_case793_goc___sad</text><rect x="410" y="602" width="159" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="579" y="622">3.62x</text><text class="time" x="1380" y="622" text-anchor="end">0.21s / 0.77s</text>
+    <text class="label" x="397" y="655" text-anchor="end">pg11b_opf_case6468_rte___sad</text><rect x="410" y="636" width="158" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="578" y="656">3.59x</text><text class="time" x="1380" y="656" text-anchor="end">10.90s / 39.17s</text>
+    <text class="label" x="397" y="689" text-anchor="end">pg11b_opf_case2383wp_k_1svp/pf_ap</text><rect x="410" y="670" width="158" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="578" y="690">3.58x</text><text class="time" x="1380" y="690" text-anchor="end">0.90s / 3.24s</text>
+    <text class="label" x="397" y="723" text-anchor="end">pg11b_opf_case30_ieee___sad</text><rect x="410" y="704" width="156" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="576" y="724">3.54x</text><text class="time" x="1380" y="724" text-anchor="end">0.00s / 0.02s</text>
+    <text class="label" x="397" y="757" text-anchor="end">pg11b_opf_case900_goc___spi</text><rect x="410" y="738" width="155" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="575" y="758">3.53x</text><text class="time" x="1380" y="758" text-anchor="end">0.18s / 0.63s</text>
+    <text class="label" x="397" y="791" text-anchor="end">pg11b_opf_case2742_goc___sad</text><rect x="410" y="772" width="154" height="25" rx="3" fill="url(#blueBar)"/><text class="value" x="574" y="792">3.51x</text><text class="time" x="1380" y="792" text-anchor="end">3.42s / 12.03s</text>
+  </g>
+
+  <line x1="410" y1="830" x2="1114" y2="830" stroke="#111827" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text class="tick" x="410" y="858">0</text><text class="tick" x="498" y="858">2</text>
+    <text class="tick" x="586" y="858">4</text><text class="tick" x="674" y="858">6</text>
+    <text class="tick" x="762" y="858">8</text><text class="tick" x="850" y="858">10</text>
+    <text class="tick" x="938" y="858">12</text><text class="tick" x="1026" y="858">14</text>
+    <text class="tick" x="1114" y="858">16</text>
+  </g>
+  <text x="762" y="900" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#111827">Speedup (x)</text>
+</svg>
